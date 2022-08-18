@@ -1,9 +1,8 @@
-let x = require('../server');
+let schMod = require('./booksdb')
 
+function handlebooks(req, res) {
 
-function handleTest(req, res) {
-
-    x.find({},(error,result)=>{
+    schMod.BookModel.find({},(error,result)=>{
         if(error) {
             console.log('error gitting data from db')
         }else {
@@ -14,5 +13,4 @@ function handleTest(req, res) {
    
 }
 
-
-module.exports = {handleTest};
+module.exports = {handlebooks}
