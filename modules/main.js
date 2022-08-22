@@ -4,4 +4,4 @@ res.send("main page");
 }
 
 
-module.exports = {handleMain}
+module.exports = {handleMain};
